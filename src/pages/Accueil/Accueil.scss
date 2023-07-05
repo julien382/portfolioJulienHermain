@@ -1,12 +1,16 @@
-.paragraphName{
+@import '../../styles/index.scss';
 
+.paragraphName{
+    padding: 20px;
 
     h2{
-
+        font-size: 25px;
+        color: $secondary-color;
     }
 
     h1{
+        margin-top: 10px;
         font-size: 40px;
-        width: 200px;
+        width: 250px;
     }
 }
