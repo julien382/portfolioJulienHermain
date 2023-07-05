@@ -1,4 +1,6 @@
 import Accueil from "../pages/Accueil/Accueil";
+import '../styles/reset.scss'
+import '../styles/index.scss'
 
 function App() {
 
