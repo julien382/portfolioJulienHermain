@@ -5,9 +5,11 @@ const Contact = () => {
 
     return (
         <div>
-            <div className='cardContact'>
+            <div className='contactTop'>
                 <h4>Contact</h4>
-                <div className='line'></div>
+            </div>
+            <div className='contactBottom'>
+
             </div>
         </div>
 
