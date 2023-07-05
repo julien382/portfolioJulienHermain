@@ -11,7 +11,6 @@ const Accueil = () => {
             </div>
         </div>
 
-
     )
 }
 
