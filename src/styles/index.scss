@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('../assets/quadrillage.jpg');
+  //background-image: url('../assets/quadrillage.jpg');
   background-repeat: repeat;
 }
 
@@ -15,7 +15,7 @@ code {
 }
 
 #app{
-  cursor: url('../assets/cursorAlpaga.cur'), auto;
+  //cursor: url('../assets/cursorAlpaga.cur'), auto;
   width: 100%;
   max-width: 1920px;
   margin: auto;
@@ -24,5 +24,6 @@ code {
 
 $primary-color: black;
 $secondary-color: #525252;
+$tertiary-color: #c5c5c5;
 
 $secondary-font: 'Mansalva', cursive;

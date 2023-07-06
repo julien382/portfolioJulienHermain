@@ -1,7 +1,9 @@
+@import '../../styles/index.scss';
+
 .contactTop{
     width: 250px;
     height: 54px;
-    background: #fff;
+    background: $tertiary-color;
     border: 3px solid #000;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
