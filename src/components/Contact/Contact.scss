@@ -25,7 +25,6 @@
 
 .contactBottom{
     width: 250px;
-    height: 254px;
     background: #fff;
     border: 3px solid #000;
     border-top: none;
@@ -33,4 +32,12 @@
     border-bottom-right-radius: 25px;
     box-shadow: 15px 15px 0 -2.5px #fff, 15px 15px 0 0 #000;
     margin-bottom: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .linkContact{
+        margin: 20px;
+        font-size: 50px;
+    }
 }
