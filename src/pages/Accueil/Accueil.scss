@@ -1,5 +1,14 @@
 @import '../../styles/index.scss';
 
+.accueil{
+    background-image: url('../../assets/quadrillage.jpg');
+    background-repeat: repeat;
+    width: 100%;
+    max-width: 1920px;
+    margin: auto;
+    padding: 15px;
+}
+
 .paragraphName{
     padding: 20px;
 

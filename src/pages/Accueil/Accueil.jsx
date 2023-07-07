@@ -6,7 +6,7 @@ const Accueil = () => {
 
 
     return (
-        <div>
+        <div className='accueil'>
             <div className='paragraphName'>
                 <h2>Julien Hermain</h2>
                 <h1>Développeur JavaScript React</h1>
