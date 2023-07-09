@@ -8,15 +8,17 @@ const Accueil = () => {
 
 
     return (
-        <div className='accueil'>
-            <div className='paragraphName'>
-                <h2>Julien Hermain</h2>
-                <h1>Développeur JavaScript React</h1>
+        <div className='app'>
+            <div className='accueil'>
+                <div className='paragraphName'>
+                    <h2>Julien Hermain</h2>
+                    <h1>Développeur JavaScript React</h1>
+                </div>
+                <AllStack />
+                <Cards />
+                <Contact />
+                <Footer />
             </div>
-            <AllStack />
-            <Cards />
-            <Contact />
-            <Footer />
         </div>
 
     )
