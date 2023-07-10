@@ -14,27 +14,32 @@ const Cards = () => {
       },
       {
         image: logo,
-        title: "Alpaga",
+        title: "P2",
         paragraph: "Création d’un site pour expliquer la différence"
       },
       {
         image: logo,
-        title: "Alpaga",
+        title: "P3",
         paragraph: "Création d’un site pour expliquer la différence entre les alpaga et les lama"
       },
       {
         image: logo,
-        title: "Alpaga",
+        title: "P4",
         paragraph: "Création d’un site pour expliquer la différence entre les alpaga et les lama"
       },
       {
         image: logo,
-        title: "Alpaga",
+        title: "P6",
         paragraph: "Création d’un site pour expliquer la différence entre les alpaga et les lama"
       },
       {
         image: logo,
-        title: "Alpaga",
+        title: "P7",
+        paragraph: "Création d’un site pour expliquer la différence entre les alpaga et les lama"
+      },
+      {
+        image: logo,
+        title: "P11",
         paragraph: "Création d’un site pour expliquer la différence entre les alpaga et les lama"
       }
     ];
@@ -50,7 +55,7 @@ const Cards = () => {
     };
   
     return (
-      <div>
+      <div className='containerCards'>
         <div className="cards">
           {visibleCards.map((card, index) => (
             <Card
