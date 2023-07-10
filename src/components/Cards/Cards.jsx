@@ -8,7 +8,7 @@ const Cards = () => {
     return (
         <div className='cards'>
             <Card image={logo} title={"Alpaga"} paragraphe={"Création d’un site pour expliquer la différence entre les alpaga et les lama"}/>
-            <Card image={logo} title={"Alpaga"} paragraphe={"Création d’un site pour expliquer la différence entre les alpaga et les lama"}/>
+            <Card image={logo} title={"Alpaga"} paragraphe={"Création d’un site pour expliquer la différence "}/>
             <Card image={logo} title={"Alpaga"} paragraphe={"Création d’un site pour expliquer la différence entre les alpaga et les lama"}/>
             <Card image={logo} title={"Alpaga"} paragraphe={"Création d’un site pour expliquer la différence entre les alpaga et les lama"}/>
         </div>
