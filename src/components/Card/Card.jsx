@@ -1,6 +1,6 @@
 import './Card.scss'
 
-const Card = ({image, title, paragraphe}) => {
+const Card = ({image, title, paragraph}) => {
 
 
     return (
@@ -10,7 +10,7 @@ const Card = ({image, title, paragraphe}) => {
             </div>
             <div className='cardTextContainer'>
                 <h3>{title}</h3>
-                <p>{paragraphe}</p>
+                <p>{paragraph}</p>
             </div>
         </div>
 
