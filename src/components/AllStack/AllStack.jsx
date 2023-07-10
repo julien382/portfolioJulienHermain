@@ -5,19 +5,17 @@ const Contact = () => {
 
 
     return (
-        <div>
-            <div className='allStackContainer'>
-                <div className='allStack'>
-                    <img className='logoStack' src={logo} alt="logo Stack" />
-                    <img className='logoStack' src={logo} alt="logo Stack" />
-                    <img className='logoStack' src={logo} alt="logo Stack" />
-                    <img className='logoStack' src={logo} alt="logo Stack" />
-                    <img className='logoStack' src={logo} alt="logo Stack" />
-                    <img className='logoStack' src={logo} alt="logo Stack" />
+        <div className='allStackContainer'>
+            <div className='allStack'>
+                <img className='logoStack' src={logo} alt="logo Stack" />
+                <img className='logoStack' src={logo} alt="logo Stack" />
+                <img className='logoStack' src={logo} alt="logo Stack" />
+                <img className='logoStack' src={logo} alt="logo Stack" />
+                <img className='logoStack' src={logo} alt="logo Stack" />
+                <img className='logoStack' src={logo} alt="logo Stack" />
 
-                </div>
-                <p>V</p>
             </div>
+            <p>V</p>
         </div>
 
     )

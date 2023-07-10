@@ -1,12 +1,13 @@
 @import '../../styles/index.scss';
 
 .allStackContainer{
-    width: 250px;
+    flex: 1 0 180px;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin: 0 15px 65px 5px;
     background-color: white;
     border: 3px solid #000;
     box-shadow: 15px 15px 0 -2.5px white, 15px 15px 0 0 #000;

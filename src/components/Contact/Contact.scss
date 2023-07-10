@@ -1,7 +1,8 @@
 @import '../../styles/index.scss';
 
 .contactTop{
-    width: 250px;
+    max-width: 420px;
+    margin-right: 15px;
     height: 54px;
     background: $tertiary-color;
     border: 3px solid #000;
@@ -14,17 +15,11 @@
         font-size: 30px;
         border-bottom: black;
     }
-
-    .line{
-        width: 100%;
-        height: 3px;
-        color: black;
-        background-color: black;
-    }
 }
 
 .contactBottom{
-    width: 250px;
+    max-width: 420px;
+    margin-right: 15px;
     background: #fff;
     border: 3px solid #000;
     border-top: none;
