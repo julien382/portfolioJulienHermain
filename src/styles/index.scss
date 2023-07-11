@@ -23,3 +23,12 @@ $secondary-color: #525252;
 $tertiary-color: #c5c5c5;
 
 $secondary-font: 'Mansalva', cursive;
+
+@keyframes spawnEffect  {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
