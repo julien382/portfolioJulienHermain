@@ -1,9 +1,11 @@
 import './Cards.scss'
-import logo from "../../assets/_edb21061-07ad-4058-a37e-31d41ef7d083.jpg";
 import alpaga from "../../assets/card/alpaga.png";
 import booki from "../../assets/card/booki.png";
 import ohmyfood from "../../assets/card/ohmyfood.png";
 import gameon from "../../assets/card/gameon.png";
+import fisheye from "../../assets/card/fisheye.png";
+import lespetitsplats from "../../assets/card/lespetitsplats.png";
+import kasa from "../../assets/card/kasa.png";
 import Card from '../Card/Card';
 import React, { useState } from 'react';
 
@@ -32,17 +34,17 @@ const Cards = () => {
         paragraph: "Créer une landing page avec Javascript"
       },
       {
-        image: logo,
+        image: fisheye,
         title: "FishEye",
         paragraph: "Créer un site accessible pour une plateforme de photographes"
       },
       {
-        image: logo,
+        image: lespetitsplats,
         title: "Les petits plats",
         paragraph: "Développer un algorithme de recherche en Javascript"
       },
       {
-        image: logo,
+        image: kasa,
         title: "Kasa",
         paragraph: "Développer une application avec React et React Router"
       }
