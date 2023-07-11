@@ -14,33 +14,33 @@ const Cards = () => {
       },
       {
         image: logo,
-        title: "P2",
-        paragraph: "Création d’un site pour expliquer la différence"
+        title: "Booki",
+        paragraph: "Transformer une maquette en site web avec HTML & CSS"
       },
       {
         image: logo,
-        title: "P3",
-        paragraph: "Création d’un site pour expliquer la différence entre les alpaga et les lama"
+        title: "ohmyfood",
+        paragraph: "Dynamiser une page web avec des animations CSS"
       },
       {
         image: logo,
-        title: "P4",
-        paragraph: "Création d’un site pour expliquer la différence entre les alpaga et les lama"
+        title: "GameOn",
+        paragraph: "Créer une landing page avec Javascript"
       },
       {
         image: logo,
-        title: "P6",
-        paragraph: "Création d’un site pour expliquer la différence entre les alpaga et les lama"
+        title: "FishEye",
+        paragraph: "Créer un site accessible pour une plateforme de photographes"
       },
       {
         image: logo,
-        title: "P7",
-        paragraph: "Création d’un site pour expliquer la différence entre les alpaga et les lama"
+        title: "Les petits plats",
+        paragraph: "Développer un algorithme de recherche en Javascript"
       },
       {
         image: logo,
-        title: "P11",
-        paragraph: "Création d’un site pour expliquer la différence entre les alpaga et les lama"
+        title: "Kasa",
+        paragraph: "Développer une application avec React et React Router"
       }
     ];
   
