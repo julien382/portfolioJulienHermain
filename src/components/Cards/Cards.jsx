@@ -1,5 +1,9 @@
 import './Cards.scss'
 import logo from "../../assets/_edb21061-07ad-4058-a37e-31d41ef7d083.jpg";
+import alpaga from "../../assets/card/alpaga.png";
+import booki from "../../assets/card/booki.png";
+import ohmyfood from "../../assets/card/ohmyfood.png";
+import gameon from "../../assets/card/gameon.png";
 import Card from '../Card/Card';
 import React, { useState } from 'react';
 
@@ -8,22 +12,22 @@ const Cards = () => {
   
     const cardsData = [
       {
-        image: logo,
+        image: alpaga,
         title: "Alpaga",
         paragraph: "Création d’un site pour expliquer la différence entre les alpaga et les lama"
       },
       {
-        image: logo,
+        image: booki,
         title: "Booki",
-        paragraph: "Transformer une maquette en site web avec HTML & CSS"
+        paragraph: "Transformer une maquette en site web avec HTML et CSS"
       },
       {
-        image: logo,
+        image: ohmyfood,
         title: "ohmyfood",
         paragraph: "Dynamiser une page web avec des animations CSS"
       },
       {
-        image: logo,
+        image: gameon,
         title: "GameOn",
         paragraph: "Créer une landing page avec Javascript"
       },
