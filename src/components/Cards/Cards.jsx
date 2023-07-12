@@ -14,36 +14,43 @@ const Cards = () => {
   
     const cardsData = [
       {
+        link: "https://julien382.github.io/Alpaga/",
         image: alpaga,
         title: "Alpaga",
         paragraph: "Création d’un site pour expliquer la différence entre les alpaga et les lama"
       },
       {
+        link: "https://julien382.github.io/P2_Booki/",
         image: booki,
         title: "Booki",
         paragraph: "Transformer une maquette en site web avec HTML et CSS"
       },
       {
+        link: "https://julien382.github.io/JulienHermain_3_28-02-2022/",
         image: ohmyfood,
         title: "ohmyfood",
         paragraph: "Dynamiser une page web avec des animations CSS"
       },
       {
+        link: "https://julien382.github.io/JulienHermain_P4_06_04_22_GameOn-website-FR/",
         image: gameon,
         title: "GameOn",
         paragraph: "Créer une landing page avec Javascript"
       },
       {
+        link: "https://julien382.github.io/JulienHermain_P6_07-05-2022/",
         image: fisheye,
         title: "FishEye",
         paragraph: "Créer un site accessible pour une plateforme de photographes"
       },
       {
+        link: "https://julien382.github.io/JulienHermain_P7_16-06-2022/",
         image: lespetitsplats,
         title: "Les petits plats",
         paragraph: "Développer un algorithme de recherche en Javascript"
       },
       {
+        link: "https://julien382.github.io/JulienHermain_P11_05-12-2022/",
         image: kasa,
         title: "Kasa",
         paragraph: "Développer une application avec React et React Router"
@@ -66,6 +73,7 @@ const Cards = () => {
           {visibleCards.map((card, index) => (
             <Card
               key={index}
+              link={card.link}
               image={card.image}
               title={card.title}
               paragraph={card.paragraph}

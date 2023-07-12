@@ -16,7 +16,7 @@ const Contact = () => {
                 <Link to="https://github.com/julien382">
                     <FontAwesomeIcon icon={faGithub} className='linkContact'/>
                 </Link>
-                <Link to="julhermain@gmail.com">
+                <Link to="mailto:julhermain@gmail.com">
                     <FontAwesomeIcon icon={faEnvelope} className='linkContact'/>
                 </Link>
                 <Link to="https://www.linkedin.com/in/julien-hermain/">

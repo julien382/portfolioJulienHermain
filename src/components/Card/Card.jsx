@@ -1,18 +1,21 @@
 import './Card.scss'
+import { Link } from 'react-router-dom'
 
-const Card = ({image, title, paragraph}) => {
+const Card = ({link, image, title, paragraph}) => {
 
 
     return (
         <div className='card'>
-            <div className='cardImageContainer'>
-                <img className='logoStack' src={image} alt={title} />
+                <Link to={link}>
+                <div className='cardImageContainer'>
+                    <img className='logoStack' src={image} alt={title} />
+                </div>
+                <div className='cardTextContainer'>
+                    <h3>{title}</h3>
+                    <p>{paragraph}</p>
+                </div>
+                </Link>
             </div>
-            <div className='cardTextContainer'>
-                <h3>{title}</h3>
-                <p>{paragraph}</p>
-            </div>
-        </div>
 
     )
 }
