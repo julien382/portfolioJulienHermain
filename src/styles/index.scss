@@ -32,3 +32,14 @@ $secondary-font: 'Mansalva', cursive;
     opacity: 1;
   }
 }
+
+@keyframes slideFromLeft {
+  0% {
+    left: -100px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}

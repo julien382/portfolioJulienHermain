@@ -16,6 +16,8 @@
 .paragraphName{
     padding: 20px;
     margin: 32px 0 50px 0;
+    position: relative;
+    animation: slideFromLeft 1.5s forwards;
 
     h2{
         font-size: 25px;
