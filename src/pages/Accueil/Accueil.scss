@@ -18,6 +18,7 @@
     margin: 32px 0 50px 0;
     position: relative;
     animation: slideFromLeft 1.5s forwards;
+    line-height: 1.2;
 
     h2{
         font-size: 25px;
@@ -41,11 +42,10 @@
         align-items: center;
     }
     
-    .containerPapragraphStack{
-        display: flex;
-        flex-direction: row-reverse;
-        margin-top: 50px;
-    }
+    .paragraphName{
+        text-align: center;
+        margin: 32px 0 20px 0;
+    };
 }
 
 
@@ -53,4 +53,5 @@
     .accueil{
         width: 60%;
     }
+
 }
