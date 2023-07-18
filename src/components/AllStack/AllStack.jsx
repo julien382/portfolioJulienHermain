@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './AllStack.scss';
+
 import sass from "../../assets/stack/sass.png";
 import html from "../../assets/stack/html.png";
 import css from "../../assets/stack/css.png";
@@ -15,6 +16,9 @@ import npm from "../../assets/stack/npm.png";
 import cPlusPlus from "../../assets/stack/cPlusPlus.png";
 import csharp from "../../assets/stack/cSharp.png";
 import python from "../../assets/stack/python.png";
+
+import { useMediaQuery } from 'react-responsive';
+
 
 const Contact = () => {
   const [showAllImages, setShowAllImages] = useState(false);
@@ -37,7 +41,10 @@ const Contact = () => {
     csharp,
   ];
 
-  const visibleImages = showAllImages ? imagesData : imagesData.slice(0, 6);
+  const isDesktop = useMediaQuery({ minWidth: 768 });
+  const visibleImages = showAllImages
+    ? imagesData
+    : imagesData.slice(0, isDesktop ? 10 : 6);
 
   const handleShowMore = () => {
     setShowAllImages(true);

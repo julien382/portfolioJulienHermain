@@ -53,3 +53,9 @@
         animation: spawnEffect 1s forwards;
     }
 }
+
+@media only screen and (min-width: 767px) {
+    .allStackContainer {
+        max-width: 520px;
+    }
+}
