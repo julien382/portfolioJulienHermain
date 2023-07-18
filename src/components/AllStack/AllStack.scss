@@ -1,5 +1,10 @@
 @import '../../styles/index.scss';
 
+.allStacks{
+    display: flex;
+    justify-content: center;
+}
+
 .allStackContainer {
     flex: 1 0 180px;
     max-width: 350px;

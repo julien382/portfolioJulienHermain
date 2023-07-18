@@ -48,28 +48,31 @@ const Contact = () => {
   };
 
     return (
-        <div className='allStackContainer'>
-            <div className="allStack">
-                {visibleImages.map((image, index) => (
-                    <div className='logoStackContainer'>
-                        <img className='logoStack' key={index} src={image} alt="Image" />
+        <div className='allStacks'>
+            <div className='allStackContainer'>
+                <div className="allStack">
+                    {visibleImages.map((image, index) => (
+                        <div className='logoStackContainer'>
+                            <img className='logoStack' key={index} src={image} alt="Image" />
+                        </div>
+                    ))}
+                </div>
+                {!showAllImages ? (
+                    <div className='arrowContainer' onClick={handleShowMore}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none" className='arrow'>
+                            <path d="M10.0387 15.058L20.0773 25.0967L30.116 15.058" stroke="black" stroke-width="3.34622" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
-                ))}
-            </div>
-            {!showAllImages ? (
-                <div className='arrowContainer' onClick={handleShowMore}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none" className='arrow'>
-                        <path d="M10.0387 15.058L20.0773 25.0967L30.116 15.058" stroke="black" stroke-width="3.34622" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+                ) : (
+                    <div className='arrowContainer' onClick={handleShowLess}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none" className='arrow arrowReturn'>
+                            <path d="M10.0387 15.058L20.0773 25.0967L30.116 15.058" stroke="black" stroke-width="3.34622" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                )}
                 </div>
-            ) : (
-                <div className='arrowContainer' onClick={handleShowLess}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none" className='arrow arrowReturn'>
-                        <path d="M10.0387 15.058L20.0773 25.0967L30.116 15.058" stroke="black" stroke-width="3.34622" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-            )}
-            </div>
+
+        </div>
     );
 };
 
