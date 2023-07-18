@@ -36,7 +36,6 @@
     .cardTextContainer{
         h3{
             font-size: 27px;
-            word-break: break-all;
         }
         
         p{
@@ -65,9 +64,22 @@
         transition: all 0.3s ease-in-out;
         border: 2px solid #000;
         border-radius: 25px;
-        box-shadow: 5px 5px 0 0 black;
+        box-shadow: 8px 8px 0 0 black;
         padding: 15px;
         margin: 20px;
         animation: spawnEffect 1s forwards;
+    }
+
+    .card:hover {
+        transform: translateY(8px) translateX(8px);
+        box-shadow: 0 0 0 0 black;
+    }
+}
+
+@media (max-width: 766px) {
+    .cardTextContainer{
+        h3{
+            word-break: break-all;
+        }
     }
 }
