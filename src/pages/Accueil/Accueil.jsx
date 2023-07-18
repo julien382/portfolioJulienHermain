@@ -12,11 +12,13 @@ const Accueil = () => {
         <div className='app'>
             <div className='accueil'>
                 <Header />
-                <div className='paragraphName'>
-                    <h2>Julien Hermain</h2>
-                    <h1>Développeur JavaScript React</h1>
+                <div className='containerPapragraphStack'>
+                    <div className='paragraphName'>
+                        <h2>Julien Hermain</h2>
+                        <h1>Développeur JavaScript React</h1>
+                    </div>
+                    <AllStack />
                 </div>
-                <AllStack />
                 <Cards />
                 <Contact />
                 <Footer />

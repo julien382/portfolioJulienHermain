@@ -8,6 +8,7 @@ import lespetitsplats from "../../assets/card/lespetitsplats.png";
 import kasa from "../../assets/card/kasa.png";
 import Card from '../Card/Card';
 import React, { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 const Cards = () => {
     const [showAllCards, setShowAllCards] = useState(false);
@@ -56,8 +57,10 @@ const Cards = () => {
         paragraph: "Développer une application avec React et React Router"
       }
     ];
-  
-    const visibleCards = showAllCards ? cardsData : cardsData.slice(0, 4);
+
+    const isDesktop = useMediaQuery({ minWidth: 768 }); // Détection du mode bureau (ajustez la valeur minWidth selon vos besoins)
+
+    const visibleCards = showAllCards || isDesktop ? cardsData : cardsData.slice(0, 4);
   
     const handleShowMore = () => {
       setShowAllCards(true);
