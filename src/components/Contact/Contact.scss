@@ -1,5 +1,10 @@
 @import '../../styles/index.scss';
 
+.contactContainer{
+    display: flex;
+    justify-content: center;
+}
+
 .contactTop{
     max-width: 420px;
     margin-right: 15px;
@@ -9,6 +14,7 @@
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     box-shadow: 15px 15px 0 -2.5px $tertiary-color, 15px 15px 0 0 #000;
+    flex-shrink: 0;
 
     h4{
         margin: 15px;
@@ -32,7 +38,7 @@
     align-items: center;
 
     .linkContact{
-        margin: 20px;
+        margin: 25px;
         font-size: 50px;
     }
 }
