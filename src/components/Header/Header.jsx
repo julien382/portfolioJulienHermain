@@ -1,21 +1,19 @@
-import './Header.scss'
+import React from 'react';
+import './Header.scss';
+import pdfFile from '../../data/CV_JULIEN_HERMAIN_2023_Openclassrooms.pdf';
 
 const Header = () => {
+  const openPdf = () => {
+    window.open(pdfFile);
+  };
 
-    const handleDownload = () => {
-        const link = document.createElement('a');
-        link.href = '../../data/CV_JULIEN_HERMAIN_2023_Openclassrooms.pdf';
-        link.download = 'CV_Julien_Hermain.pdf';
-        link.click();
-    };
- 
-    return (
-        <header className="headerContainer">
-            <button className='buttonHeader' onClick={handleDownload}>
-            CV
-            </button>
-        </header>
-    );
+  return (
+    <header className="headerContainer">
+      <button className='buttonHeader' onClick={openPdf}>
+        CV
+      </button>
+    </header>
+  );
 };
 
 export default Header;
