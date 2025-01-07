@@ -42,4 +42,16 @@
     .accueil{
         width: 100%;
     }
+
+    .containerAllStack{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 50px;
+    }
+
+    .containerAccueil{
+        display: flex;
+        flex-direction: column;
+    }
 }

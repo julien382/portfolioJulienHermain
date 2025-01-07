@@ -12,9 +12,14 @@ const Accueil = () => {
     return (
         <div className='app'>
             <div className='accueil'>
-                <Header />
-                <Title />
-                <AllStack />
+                <div className='containerAllStack'>
+                    <div className='containerAccueil'>
+                        <Header />
+                        <Title />
+                    </div>
+                    <AllStack />
+
+                </div>
                 <Cards />
                 <Contact />
                 <Footer />

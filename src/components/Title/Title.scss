@@ -6,6 +6,7 @@
     position: relative;
     animation: slideFromLeft 1.5s forwards;
     line-height: 1.2;
+    margin-right: 15px;
 
     h2{
         font-size: 25px;
@@ -19,19 +20,8 @@
     }
 }
 
-@media (min-width: 500px) and (max-width: 766px) {
+@media only screen and (min-width: 1200px) {
     .paragraphName{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        margin-right: 15px;
     }
-
-}
-
-@media only screen and (min-width: 767px) {
-    .paragraphName{
-        text-align: center;
-        margin: 32px 0 20px 0;
-    };
 }
