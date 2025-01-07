@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './AllStack.scss';
+import PropTypes from 'prop-types'; // Importer PropTypes
 
 import sass from "../../assets/stack/sass.png";
 import html from "../../assets/stack/html.png";
@@ -59,7 +60,7 @@ const Contact = () => {
             <div className='allStackContainer'>
                 <div className="allStack">
                     {visibleImages.map((image, index) => (
-                        <div className='logoStackContainer'>
+                        <div className='logoStackContainer' key={index}>
                             <img className='logoStack' key={index} src={image} alt="Image" />
                         </div>
                     ))}
@@ -67,13 +68,13 @@ const Contact = () => {
                 {!showAllImages ? (
                     <div className='arrowContainer' onClick={handleShowMore}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none" className='arrow'>
-                            <path d="M10.0387 15.058L20.0773 25.0967L30.116 15.058" stroke="black" stroke-width="3.34622" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.0387 15.058L20.0773 25.0967L30.116 15.058" stroke="black" strokeWidth="3.34622" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </div>
                 ) : (
                     <div className='arrowContainer' onClick={handleShowLess}>
                         <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none" className='arrow arrowReturn'>
-                            <path d="M10.0387 15.058L20.0773 25.0967L30.116 15.058" stroke="black" stroke-width="3.34622" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.0387 15.058L20.0773 25.0967L30.116 15.058" stroke="black" strokeWidth="3.34622" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
                     </div>
                 )}
@@ -83,4 +84,21 @@ const Contact = () => {
     );
 };
 
-export default Contact;
+// Définir les PropTypes
+Contact.propTypes = {
+    images: PropTypes.arrayOf(PropTypes.string).isRequired, // Liste des images (chemins ou URLs)
+    initialVisibleCount: PropTypes.shape({
+      desktop: PropTypes.number.isRequired, // Nombre d'images à afficher sur desktop
+      mobile: PropTypes.number.isRequired,  // Nombre d'images à afficher sur mobile
+    }).isRequired,
+  };
+  
+  // Valeurs par défaut pour les props
+  Contact.defaultProps = {
+    images: [
+      js, react, viteJS, html, css, sass, nodeJS, redux, figma, github, npm, git, python, cPlusPlus, csharp,
+    ],
+    initialVisibleCount: { desktop: 10, mobile: 6 },
+  };
+  
+  export default Contact;
