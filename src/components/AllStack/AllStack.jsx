@@ -24,21 +24,21 @@ const Contact = () => {
   const [showAllImages, setShowAllImages] = useState(false);
 
   const imagesData = [
-    react,
-    js,
-    viteJS,
-    sass,
-    figma,
-    html,
-    css,
-    nodeJS,
-    redux,
-    github,
-    npm,
-    git,
-    python,
-    cPlusPlus,
-    inkscape
+    { src: react, name: "React" },
+    { src: js, name: "JavaScript" },
+    { src: viteJS, name: "ViteJS" },
+    { src: sass, name: "Sass" },
+    { src: figma, name: "Figma" },
+    { src: html, name: "HTML" },
+    { src: css, name: "CSS" },
+    { src: nodeJS, name: "NodeJS" },
+    { src: redux, name: "Redux" },
+    { src: github, name: "GitHub" },
+    { src: npm, name: "NPM" },
+    { src: git, name: "Git" },
+    { src: python, name: "Python" },
+    { src: cPlusPlus, name: "C++" },
+    { src: inkscape, name: "Inkscape" }
   ];
 
   const isDesktop = useMediaQuery({ minWidth: 768 });
@@ -59,8 +59,9 @@ const Contact = () => {
             <div className='allStackContainer'>
                 <div className="allStack">
                     {visibleImages.map((image, index) => (
-                        <div className='logoStackContainer' key={index}>
-                            <img className='logoStack' key={index} src={image} alt="Image" />
+                        <div className="logoStackContainer" key={index}>
+                            <img className="logoStack" src={image.src} alt={image.name} />
+                            <span className="logoName">{image.name}</span>
                         </div>
                     ))}
                 </div>
