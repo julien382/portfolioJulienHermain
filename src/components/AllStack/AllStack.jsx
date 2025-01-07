@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import './AllStack.scss';
-import PropTypes from 'prop-types'; // Importer PropTypes
 
 import sass from "../../assets/stack/sass.png";
 import html from "../../assets/stack/html.png";
@@ -15,7 +14,7 @@ import github from "../../assets/stack/github.png";
 import git from "../../assets/stack/git.png";
 import npm from "../../assets/stack/npm.png";
 import cPlusPlus from "../../assets/stack/cPlusPlus.png";
-import csharp from "../../assets/stack/cSharp.png";
+import inkscape from "../../assets/stack/inkscape.png";
 import python from "../../assets/stack/python.png";
 
 import { useMediaQuery } from 'react-responsive';
@@ -25,21 +24,21 @@ const Contact = () => {
   const [showAllImages, setShowAllImages] = useState(false);
 
   const imagesData = [
-    js,
     react,
+    js,
     viteJS,
+    sass,
+    figma,
     html,
     css,
-    sass,
     nodeJS,
     redux,
-    figma,
     github,
     npm,
     git,
     python,
     cPlusPlus,
-    csharp,
+    inkscape
   ];
 
   const isDesktop = useMediaQuery({ minWidth: 768 });
@@ -84,21 +83,4 @@ const Contact = () => {
     );
 };
 
-// Définir les PropTypes
-Contact.propTypes = {
-    images: PropTypes.arrayOf(PropTypes.string).isRequired, // Liste des images (chemins ou URLs)
-    initialVisibleCount: PropTypes.shape({
-      desktop: PropTypes.number.isRequired, // Nombre d'images à afficher sur desktop
-      mobile: PropTypes.number.isRequired,  // Nombre d'images à afficher sur mobile
-    }).isRequired,
-  };
-  
-  // Valeurs par défaut pour les props
-  Contact.defaultProps = {
-    images: [
-      js, react, viteJS, html, css, sass, nodeJS, redux, figma, github, npm, git, python, cPlusPlus, csharp,
-    ],
-    initialVisibleCount: { desktop: 10, mobile: 6 },
-  };
-  
-  export default Contact;
+export default Contact;
