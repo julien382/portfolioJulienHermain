@@ -1,4 +1,6 @@
 import './Cards.scss'
+import ohmylunch from "../../assets/card/ohmylunch.png";
+import baratto from "../../assets/card/baratto.png";
 import alpaga from "../../assets/card/alpaga.png";
 import booki from "../../assets/card/booki.png";
 import ohmyfood from "../../assets/card/ohmyfood.png";
@@ -15,34 +17,28 @@ const Cards = () => {
   
     const cardsData = [
       {
+        link: "https://julien382.github.io/ohmylunch/",
+        image: ohmylunch,
+        title: "ohmylunch",
+        paragraph: "Plateforme pour choisir son menu en restaurant"
+      },
+      {
+        link: "https://barattoprecision.com/",
+        image: baratto,
+        title: "Baratto Precision",
+        paragraph: "Site vitrine pour une entreprise d'impression 3D"
+      },
+      {
         link: "https://julien382.github.io/Alpaga/",
         image: alpaga,
         title: "Alpaga",
         paragraph: "Création d’un site pour expliquer la différence entre les alpaga et les lama"
       },
       {
-        link: "https://julien382.github.io/P2_Booki/",
-        image: booki,
-        title: "Booki",
-        paragraph: "Transformer une maquette en site web avec HTML et CSS"
-      },
-      {
-        link: "https://julien382.github.io/JulienHermain_3_28-02-2022/",
-        image: ohmyfood,
-        title: "ohmyfood",
-        paragraph: "Dynamiser une page web avec des animations CSS"
-      },
-      {
-        link: "https://julien382.github.io/JulienHermain_P4_06_04_22_GameOn-website-FR/",
-        image: gameon,
-        title: "GameOn",
-        paragraph: "Créer une landing page avec Javascript"
-      },
-      {
-        link: "https://julien382.github.io/JulienHermain_P6_07-05-2022/",
-        image: fisheye,
-        title: "FishEye",
-        paragraph: "Créer un site accessible pour une plateforme de photographes"
+        link: "https://julien382.github.io/JulienHermain_P11_05-12-2022/",
+        image: kasa,
+        title: "Kasa",
+        paragraph: "Développer une application avec React et React Router"
       },
       {
         link: "https://julien382.github.io/JulienHermain_P7_16-06-2022/",
@@ -51,17 +47,35 @@ const Cards = () => {
         paragraph: "Développer un algorithme de recherche en Javascript"
       },
       {
-        link: "https://julien382.github.io/JulienHermain_P11_05-12-2022/",
-        image: kasa,
-        title: "Kasa",
-        paragraph: "Développer une application avec React et React Router"
+        link: "https://julien382.github.io/JulienHermain_P6_07-05-2022/",
+        image: fisheye,
+        title: "FishEye",
+        paragraph: "Créer un site accessible pour une plateforme de photographes"
+      },
+      {
+        link: "https://julien382.github.io/JulienHermain_P4_06_04_22_GameOn-website-FR/",
+        image: gameon,
+        title: "GameOn",
+        paragraph: "Créer une landing page avec Javascript"
+      },
+      {
+        link: "https://julien382.github.io/JulienHermain_3_28-02-2022/",
+        image: ohmyfood,
+        title: "ohmyfood",
+        paragraph: "Dynamiser une page web avec des animations CSS"
+      },
+      {
+        link: "https://julien382.github.io/P2_Booki/",
+        image: booki,
+        title: "Booki",
+        paragraph: "Transformer une maquette en site web avec HTML et CSS"
       }
     ];
-
+    
     const isDesktop = useMediaQuery({ minWidth: 768 }); // Détection du mode bureau (ajustez la valeur minWidth selon vos besoins)
 
     const visibleCards = showAllCards || isDesktop ? cardsData : cardsData.slice(0, 4);
-  
+    
     const handleShowMore = () => {
       setShowAllCards(true);
     };
