@@ -4,6 +4,7 @@ import Footer from "../../components/Footer/Footer";
 import AllStack from '../../components/AllStack/AllStack';
 import Cards from '../../components/Cards/Cards';
 import Header from '../../components/Header/Header';
+import Title from '../../components/Title/Title';
 
 const Accueil = () => {
 
@@ -12,10 +13,7 @@ const Accueil = () => {
         <div className='app'>
             <div className='accueil'>
                 <Header />
-                <div className='paragraphName'>
-                    <h2>Julien Hermain</h2>
-                    <h1>Développeur JavaScript React</h1>
-                </div>
+                <Title />
                 <AllStack />
                 <Cards />
                 <Contact />
