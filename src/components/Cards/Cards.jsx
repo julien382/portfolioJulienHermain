@@ -7,7 +7,7 @@ import fisheye from "../../assets/card/fisheye.png";
 import lespetitsplats from "../../assets/card/lespetitsplats.png";
 import kasa from "../../assets/card/kasa.png";
 import Card from '../Card/Card';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 const Cards = () => {
@@ -86,15 +86,15 @@ const Cards = () => {
         {!showAllCards ? (
           <div className='arrowContainer' onClick={handleShowMore}>
               <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none" className='arrowCard'>
-                <path d="M25.1025 2C12.348 2 2 12.348 2 25.1025C2 37.8571 12.348 48.2051 25.1025 48.2051C37.8571 48.2051 48.2051 37.8571 48.2051 25.1025C48.2051 12.348 37.8571 2 25.1025 2Z" stroke="black" stroke-width="3.85042" stroke-miterlimit="10"/>
-                <path d="M36.6538 20.2895L25.1025 31.8408L13.5513 20.2895" stroke="black" stroke-width="3.85042" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25.1025 2C12.348 2 2 12.348 2 25.1025C2 37.8571 12.348 48.2051 25.1025 48.2051C37.8571 48.2051 48.2051 37.8571 48.2051 25.1025C48.2051 12.348 37.8571 2 25.1025 2Z" stroke="black" strokeWidth="3.85042" strokeMiterlimit="10"/>
+                <path d="M36.6538 20.2895L25.1025 31.8408L13.5513 20.2895" stroke="black" strokeWidth="3.85042" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
           </div>
         ) : (
           <div className='arrowContainer' onClick={handleShowLess}>
               <svg xmlns="http://www.w3.org/2000/svg" width="51" height="51" viewBox="0 0 51 51" fill="none" className='arrowCard arrowCardReturn'>
-                <path d="M25.1025 2C12.348 2 2 12.348 2 25.1025C2 37.8571 12.348 48.2051 25.1025 48.2051C37.8571 48.2051 48.2051 37.8571 48.2051 25.1025C48.2051 12.348 37.8571 2 25.1025 2Z" stroke="black" stroke-width="3.85042" stroke-miterlimit="10"/>
-                <path d="M36.6538 20.2895L25.1025 31.8408L13.5513 20.2895" stroke="black" stroke-width="3.85042" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25.1025 2C12.348 2 2 12.348 2 25.1025C2 37.8571 12.348 48.2051 25.1025 48.2051C37.8571 48.2051 48.2051 37.8571 48.2051 25.1025C48.2051 12.348 37.8571 2 25.1025 2Z" stroke="black" strokeWidth="3.85042" strokeMiterlimit="10"/>
+                <path d="M36.6538 20.2895L25.1025 31.8408L13.5513 20.2895" stroke="black" strokeWidth="3.85042" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
           </div>
         )}
