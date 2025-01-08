@@ -3,8 +3,13 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Card = ({ link, image, title, paragraph }) => {
+    const handleRedirect = (e) => {
+        e.preventDefault(); // Empêche toute tentative de navigation interne
+        window.open(link, "_blank", "noopener,noreferrer"); // Ouvre dans un nouvel onglet
+      };
+
     return (
-        <div className='card'>
+        <div className='card' onClick={handleRedirect}>
             <Link to={link}>
                 <div className='cardImageContainer'>
                     <img className='logoStack' src={image} alt={title} />
