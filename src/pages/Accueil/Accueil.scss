@@ -25,11 +25,7 @@
     }
 }
 
-
 @media only screen and (min-width: 1200px) {
-    .accueil{
-        width: 60%;
-    }
 
     .app{
         margin-left: 250px;
@@ -52,5 +48,6 @@
     .containerAccueil{
         display: flex;
         flex-direction: column;
+        margin-top: 9px;
     }
 }
