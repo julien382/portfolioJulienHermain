@@ -1,5 +1,5 @@
 import './Header.scss';
-import pdfFile from '../../data/CV_JULIEN_HERMAIN_2024_Openclassrooms.pdf';
+import pdfFile from '../../data/CV_JULIEN_HERMAIN_2025_Openclassrooms.pdf';
 
 const Header = () => {
   const openPdf = () => {
